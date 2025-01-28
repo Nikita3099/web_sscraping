@@ -30,5 +30,5 @@ for news in news_list:
     })
 
 with open('articles.json', 'w') as f:
-    f.write(json.dumps(parsed_data, ensure_ascii=False))
- 
+    f.write(json.dumps(parsed_data, ensure_ascii=False, indent=4))
+ # код ложиться конкретно на последней строчке " ensure_ascii=False, indent=4))" если это не вводить ответ не коректно отображается но работает
